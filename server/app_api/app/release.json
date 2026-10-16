@@ -1,0 +1,7 @@
+{
+  "latest": "1.0.1",
+  "minimum": "1.0.0",
+  "force_update": false,
+  "download_url": "https://www.zozse.cn/app-download/ZO-forum-1.0.1.apk",
+  "changelog": "修复外链、七牛图片及富文本；完善每日宝箱、积分日志和官网下载页。"
+}

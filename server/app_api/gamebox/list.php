@@ -1,0 +1,2 @@
+<?php
+require dirname(__DIR__).'/bootstrap.php';method('GET');$file=dirname(__DIR__,2).'/data/gamebox_config.json';$config=is_file($file)?json_decode(file_get_contents($file),true):[];if(!$config){require dirname(__DIR__,2).'/gamebox_config.php';$config=gamebox_defaults();}respond(['site'=>$config['site'],'download'=>$config['download'],'categories'=>$config['categories'],'features'=>$config['features'],'threads'=>thread_list()['list']]);

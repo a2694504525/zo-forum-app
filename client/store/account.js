@@ -1,0 +1,3 @@
+import { defineStore } from 'pinia'
+import { request,post } from '../api/index.js'
+export const useAccount=defineStore('account',{state:()=>({user:uni.getStorageSync('zo-user')||null,token:uni.getStorageSync('zo-token')||''}),actions:{save(data){this.token=data.token;this.user=data.user;uni.setStorageSync('zo-token',data.token);uni.setStorageSync('zo-user',data.user)},async refresh(){this.token=uni.getStorageSync('zo-token')||'';if(this.token){try{this.user=await request('auth/me.php');uni.setStorageSync('zo-user',this.user)}catch(e){if(e.code===401)this.clear();else throw e}}else this.clear()},clear(){this.token='';this.user=null;uni.removeStorageSync('zo-token');uni.removeStorageSync('zo-user')},async logout(){await post('auth/logout.php',{});this.clear()}}})

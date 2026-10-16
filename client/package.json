@@ -1,0 +1,12 @@
+{
+  "name": "zo-forum-app",
+  "version": "1.0.1",
+  "private": true,
+  "description": "ZO论坛 uni-app Vue3 客户端",
+  "dependencies": {
+    "vue": "^3.5.0",
+    "pinia": "^2.3.0",
+    "mp-html": "^2.5.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,2 @@
+import { defineStore } from 'pinia'
+export const useLibrary = defineStore('library',{state:()=>({favorites:uni.getStorageSync('zo-favorites')||[]}),actions:{toggle(thread){const i=this.favorites.findIndex(t=>t.tid===thread.tid);if(i<0)this.favorites.unshift({tid:thread.tid,subject:thread.subject,author:thread.author});else this.favorites.splice(i,1);uni.setStorageSync('zo-favorites',this.favorites)},has(tid){return this.favorites.some(t=>t.tid===tid)}}})

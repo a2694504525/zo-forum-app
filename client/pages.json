@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/thread/detail",
+      "style": {
+        "navigationBarTitleText": "帖子详情",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/auth/index",
+      "style": {
+        "navigationBarTitleText": "账号"
+      }
+    },
+    {
+      "path": "pages/compose/index",
+      "style": {
+        "navigationBarTitleText": "发布"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationBarTitleText": "个人设置"
+      }
+    },
+    {
+      "path": "pages/features/index",
+      "style": {
+        "navigationBarTitleText": "论坛服务"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "用户主页"
+      }
+    },
+    {
+      "path": "pages/chat/index",
+      "style": {
+        "navigationBarTitleText": "私信"
+      }
+    },
+    {
+      "path": "pages/lottery/index",
+      "style": {
+        "navigationBarTitleText": "神秘宝箱",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F2F2F7",
+    "backgroundColor": "#F2F2F7"
+  }
+}

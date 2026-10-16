@@ -1,0 +1,2 @@
+<?php
+require dirname(__DIR__).'/bootstrap.php';method('POST');$u=current_user(true);$id=id_input('id');exec_sql('UPDATE '.table('home_notification').' SET `new`=0 WHERE uid=? AND id=?',[$u['uid'],$id]);$count=(int)one('SELECT COUNT(*) n FROM '.table('home_notification').' WHERE uid=? AND `new`=1',[$u['uid']])['n'];exec_sql('UPDATE '.table('common_member').' SET newprompt=? WHERE uid=?',[$count,$u['uid']]);respond(['unread'=>$count]);

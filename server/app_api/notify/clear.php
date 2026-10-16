@@ -1,0 +1,2 @@
+<?php
+require dirname(__DIR__).'/bootstrap.php';method('POST');$u=current_user(true);global $pdo;$pdo->exec('CREATE TABLE IF NOT EXISTS '.table('app_notice_hidden').' (uid MEDIUMINT UNSIGNED NOT NULL,id BIGINT UNSIGNED NOT NULL,PRIMARY KEY(uid,id)) ENGINE=InnoDB');exec_sql('INSERT IGNORE INTO '.table('app_notice_hidden').' (uid,id) SELECT uid,id FROM '.table('home_notification').' WHERE uid=? AND `new`=0',[$u['uid']]);respond(['cleared'=>true]);

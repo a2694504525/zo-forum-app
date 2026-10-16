@@ -172,4 +172,3 @@ AI 配置由 `search/ai.php` 读取 `deepseek_api_key`（必需）、`deepseek_a
 第三方组件、字体、图片、图标、品牌、论坛内容及商业插件遵循各自权利和许可；本项目的代码许可不额外授予这些素材或服务的使用权，见 [第三方声明](THIRD_PARTY_NOTICES.md)。软件按现状提供，不保证适销性或特定用途适用性，责任限制以 LICENSE 为准。
 
 本次检查和仍需人工确认的事项见 [OPEN_SOURCE_CHECKLIST.md](OPEN_SOURCE_CHECKLIST.md)。
-

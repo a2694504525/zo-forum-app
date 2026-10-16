@@ -1,0 +1,47 @@
+{
+    "name" : "ZO论坛",
+    "appid" : "__UNI__F18A69D",
+    "description" : "ZO论坛官方用户客户端",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
+    "transformPx" : false,
+    "vueVersion" : "3",
+    "app-plus" : {
+        "usingComponents" : true,
+        "distribute" : {
+            "android" : {
+                "packagename" : "cn.zoscloud.forum",
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>"
+                ],
+                "abiFilters" : [ "arm64-v8a", "armeabi-v7a", "x86" ]
+            },
+            "ios" : {
+                "dSYMs" : false
+            },
+            "icons" : {
+                "android" : {
+                    "ldpi" : "static/icon-ldpi.png",
+                    "mdpi" : "static/icon-mdpi.png",
+                    "hdpi" : "static/icon-hdpi.png",
+                    "xhdpi" : "static/icon-xhdpi.png",
+                    "xxhdpi" : "static/icon-xxhdpi.png",
+                    "xxxhdpi" : "static/icon-xxxhdpi.png"
+                }
+            }
+        },
+        "modules" : {
+            "Share" : {},
+            "Camera" : {}
+        }
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "hash"
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    }
+}

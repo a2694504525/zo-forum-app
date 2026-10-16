@@ -1,0 +1,2 @@
+<?php
+require dirname(__DIR__).'/bootstrap.php';require dirname(__DIR__).'/sms.php';method('POST');challenge_check();$username=text_input('username',45);$password=text_input('password',256);$email=text_input('email',150);if(!filter_var($email,FILTER_VALIDATE_EMAIL))respond(null,422,'邮箱格式错误');$uid=create_member($username,$password,$email);$m=one('SELECT groupid FROM '.table('common_member').' WHERE uid=?',[$uid]);if((int)$m['groupid']===8)respond(['pending_review'=>true],0,'注册成功，请按论坛要求完成审核');respond(issue_token($uid,true));
