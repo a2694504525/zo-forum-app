@@ -21,9 +21,17 @@ uni-app · Vue 3 · Pinia · Discuz 配套 API
 
 [开始开发](#development) · [部署后台](#deployment) · [接口文档](API.md) · [开源检查](OPEN_SOURCE_CHECKLIST.md)
 
+[查看桌面客户端开源项目](https://github.com/a2694504525/zo-forum-desktop)
+
 </div>
 
 ---
+
+## 相关开源项目
+
+**[桌面客户端开源项目](https://github.com/a2694504525/zo-forum-desktop)**  
+基于 Electron，包含 Windows / Linux 桌面客户端及配套 Discuz 桌面 API。
+
 
 ## 功能与范围
 
